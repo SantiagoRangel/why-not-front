@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  border: solid red 1px;
+} */
+
+@font-face {
+  font-family: "questrial";
+  src: url("/fonts/Questrial-Regular.woff2");
+}
+@font-face {
+  font-family: "retroscope";
+  src: url("/fonts/RetroscopeItalic.woff2");
+}
+@font-face {
+  font-family: "mabrypro-bold";
+  src: url("/fonts/MabryPro-Bold.woff2");
+}
+@font-face {
+  font-family: "mabrypro";
+  src: url("/fonts/MabryPro-Medium.woff2");
+}
+
+@font-face {
+  font-family: "mabrypro-light";
+  src: url("/fonts/MabryPro-Light-1.ttf");
+}
+.spaced {
+  word-spacing: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
+
+.circle-container {
+  margin-top: -600px;
+  margin-right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .circle-container {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: -20px;
+    margin-left: -370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 10;
+  }
+}
+
+text {
+  fill: white;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+}
+
+.circleText {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  overflow: visible;
+  transform-origin: center center;
+  stroke-opacity: 0.5;
+}
+
+.marquee {
+  --gap: 0.5rem;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 10s linear infinite;
+}
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.char {
+  transform: translateY(115px);
+  transition: transform 0.5s;
+}
+
+#animatedh1 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
