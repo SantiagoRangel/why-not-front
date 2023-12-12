@@ -31,6 +31,16 @@
   word-spacing: 40px;
 }
 
+h1 {
+  font-family: mabrypro-light;
+}
+h2 {
+  font-family: retroscope;
+}
+p {
+  font-family: questrial;
+}
+
 @media screen and (min-width: 768px) {
   .vertical-text {
     writing-mode: vertical-rl;
@@ -94,6 +104,7 @@ text {
   min-width: 100%;
   animation: scroll 10s linear infinite;
 }
+
 @keyframes scroll {
   from {
     transform: translateX(0);

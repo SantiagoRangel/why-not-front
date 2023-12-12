@@ -14,16 +14,16 @@ export default function MasButton({
 
   const playButtonAnimation = () => {
     gsap.to(buttonRef.current, {
-      backgroundColor: "#ffffff0",
+      backgroundColor: color === "white" ? "#ffffff" : "#000000",
       duration: 0.5,
-      color: "#000000",
+      color: color === "white" ? "#000000" : "#ffffff",
     })
   }
   const resetAnimation = () => {
     gsap.to(buttonRef.current, {
       backgroundColor: "rgb(255, 255, 255, 0)",
       duration: 0.5,
-      color: "#ffffff",
+      color: color === "white" ? "#ffffff" : "#000000",
     })
   }
 
@@ -39,6 +39,7 @@ export default function MasButton({
       buttonRef.current?.removeEventListener("mouseleave", resetAnimation)
     }
   }, [])
+
   return (
     <button
       ref={buttonRef}

@@ -1,4 +1,4 @@
-import FadeIn from "../../components/Animations/FadeIn"
+import Marquee from "../../components/Marquee"
 
 export default function ExploreSection() {
   return (
@@ -22,49 +22,7 @@ export default function ExploreSection() {
         <img src="/worldmap.svg" className="w-[800px] mt-16" alt="world map" />
       </div>
 
-      <div className="marquee h-16 items-center bg-black">
-        <ul className="marquee__content">
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>{" "}
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-        </ul>
-
-        <ul aria-hidden="true" className="marquee__content">
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>{" "}
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>{" "}
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-          <span className="text-white shrink-0 text-xl ml-4">
-            LIVING IN THE HERE AND NOW
-          </span>
-        </ul>
-      </div>
+      <Marquee text={"LIVING IN THE HERE AND NOW"} />
     </>
   )
 }

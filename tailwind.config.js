@@ -13,6 +13,9 @@ export default {
         mabrypro: ["mabrypro"],
         mabryproLight: ["mabrypro-light"],
       },
+      colors: {
+        bgPail: "#e7e5e0",
+      },
     },
   },
   plugins: [],

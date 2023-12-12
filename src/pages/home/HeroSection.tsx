@@ -7,7 +7,7 @@ export default function HeroSection() {
   const exampleRef = useRef(null)
 
   useLayoutEffect(() => {
-    const animateText = new SplitType("#animatedh1")
+    new SplitType("#animatedh1")
 
     gsap.to(".char", {
       y: 0,
@@ -41,7 +41,7 @@ export default function HeroSection() {
                 experiences
               </h1>
             </FadeIn>
-            <div className="md:m-0 mt-10">
+            <div className="md:mt-0 mt-10 translate-y-28">
               <MasButton url="" text="DESCUBRE MÁS" color="white" />
             </div>
           </div>
