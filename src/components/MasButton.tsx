@@ -48,7 +48,7 @@ export default function MasButton({
           color === "white",
         "text-black border border-black rounded-[20px] md:w-40 w-32 h-10":
           color === "black",
-        "font-mabryproLight text-xs md:text-md masbutton": true,
+        "font-mabryproLight text-xs md:text-md masbutton ": true,
       })}
     >
       <a href={url}>{text}</a>

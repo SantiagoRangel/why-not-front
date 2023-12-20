@@ -2,7 +2,9 @@ import Marquee from "../../components/Marquee"
 import TripDetailDescription from "./TripDetailDescription"
 import TripDetailHero from "./TripDetailHero"
 import TripDetailItinerary from "./TripDetailItinerary"
+import TripDetailLiveExp from "./TripDetailLiveExp"
 import TripDetailMagicOf from "./TripDetailMagicOf"
+import TripDetailSummary from "./TripDetailSummary"
 
 export default function TripDetail() {
   return (
@@ -18,6 +20,9 @@ export default function TripDetail() {
       <Marquee text={"LIVING THE HERE AND NOW"} />
       <TripDetailMagicOf />
       <TripDetailItinerary />
+      <TripDetailLiveExp />
+      <img src="/images/10.png" className="w-screen" alt="japan cover photo" />
+      <TripDetailSummary />
     </>
   )
 }

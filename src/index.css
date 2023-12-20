@@ -37,15 +37,11 @@ h1 {
 h2 {
   font-family: retroscope;
 }
-p {
+h3 {
   font-family: questrial;
 }
-
-@media screen and (min-width: 768px) {
-  .vertical-text {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-  }
+p {
+  font-family: questrial;
 }
 
 .circle-container {
@@ -58,6 +54,10 @@ p {
   z-index: 10;
 }
 
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
 @media screen and (max-width: 768px) {
   .circle-container {
     margin-top: 0;
@@ -69,6 +69,14 @@ p {
     justify-content: center;
     overflow: hidden;
     z-index: 10;
+  }
+  .vertical-text {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+  }
+
+  .spaced {
+    word-spacing: 10px;
   }
 }
 

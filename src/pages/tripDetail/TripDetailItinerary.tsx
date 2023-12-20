@@ -1,6 +1,6 @@
 export default function TripDetailItinerary() {
   return (
-    <section className="bg-[url('/images/japan.webp')] bg-cover min-h-screen flex flex-col md:flex-row">
+    <section className="bg-[url('/images/japan.webp')] bg-cover min-h-screen flex flex-col md:flex-row overflow-hidden">
       <div className="flex flex-col md:w-5/12 w-full">
         <h1 className="font-mabryproLight text-center text-white text-xl mt-20">
           DISCOVER
@@ -20,8 +20,8 @@ export default function TripDetailItinerary() {
       <div className="md:w-7/12 w-full flex justify-center items-center mt-10 md:mt-0 px-0 md:px-20">
         <div className="bg-white opacity-80 w-full flex flex-col gap-5 p-10  md:pl-20 md:pr-40 md:py-20">
           <img
-            src="/images/japan3.webp"
-            className=" md:w-[550px] absolute -right-32 -translate-y-32 md:-translate-y-52 -rotate-[12deg] "
+            src="/images/japan3-2.png"
+            className=" md:w-[170px] w-[170px] absolute right-12 -translate-y-32 md:-translate-y-32 -rotate-[12deg] "
           />
           <h2 className="text-5xl">Kioto</h2>
           <h1 className="">DAY 2</h1>
